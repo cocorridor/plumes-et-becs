@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumes & Becs — Le monde fascinant des oiseaux</title>
+  <meta name="description" content="Decouvrez le monde fascinant des oiseaux de France et d'Europe. Especes, galerie photo, conseils d'observation et bien plus encore !">
+
+  <!-- Google Fonts (US CDN — intentional for COCORRIDOR detection) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (US CDN — intentional for detection) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- jQuery (US CDN — intentional for detection) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Google Analytics GA4 (tracking US — intentional for detection) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Facebook Pixel (US tracker — intentional for detection) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '000000000000000');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Hotjar (US analytics — intentional for detection) -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:0000000,hjsv:6};
+      a=o.createElement(t);a.async=1;a.src='https://static.hotjar.com/c/hotjar-'+h._hjSettings.hjid+'.js?sv='+h._hjSettings.hjsv;
+      r=o.getElementsByTagName(t)[0];r.parentNode.insertBefore(a,r);
+    })(window,document,'script');
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span>🐦</span> Plumes & Becs
+      </a>
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="especes.html">Especes</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="observation.html">Observation</a>
+        <a href="a-propos.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>
+        Bienvenue chez <br>
+        <span class="emoji-float">🐦</span> Plumes & Becs <span class="emoji-float">🦜</span>
+      </h1>
+      <p>Explorez le monde merveilleux des oiseaux de France et d'Europe. Plus de 580 especes a decouvrir, observer et proteger.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="especes.html" class="btn btn-primary"><i class="fas fa-feather-alt"></i> Decouvrir les especes</a>
+        <a href="galerie.html" class="btn btn-secondary"><i class="fas fa-camera"></i> Voir la galerie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3 data-count="580" data-suffix=" ">0</h3>
+        <p>Especes en France</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="12000" data-suffix=" ">0</h3>
+        <p>Photos dans la galerie</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="340" data-suffix=" ">0</h3>
+        <p>Observateurs actifs</p>
+      </div>
+      <div class="stat-item">
+        <h3 data-count="47" data-suffix=" ">0</h3>
+        <p>Guides d'observation</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Birds -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>🌟 Especes a la une</h2>
+        <p>Les oiseaux les plus fascinants du moment</p>
+      </div>
+      <div class="card-grid">
+        <div class="bird-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&h=400&fit=crop" alt="Martin-pecheur d'Europe" loading="lazy">
+            <span class="card-badge">Populaire</span>
+          </div>
+          <div class="card-body">
+            <h3>Martin-pecheur d'Europe</h3>
+            <p class="latin-name">Alcedo atthis</p>
+            <p>Un joyau volant aux couleurs electriques. Observez-le plonger a toute vitesse pour attraper ses proies !</p>
+            <div class="card-tags">
+              <span class="tag">Riviere</span>
+              <span class="tag">Pecheur</span>
+              <span class="tag">Protege</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bird-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600&h=400&fit=crop" alt="Perroquet Ara" loading="lazy">
+            <span class="card-badge">Exotique</span>
+          </div>
+          <div class="card-body">
+            <h3>Ara bleu et jaune</h3>
+            <p class="latin-name">Ara ararauna</p>
+            <p>Le roi des couleurs tropicales ! Son plumage bleu cobalt et jaune d'or en fait l'un des oiseaux les plus photogeniques.</p>
+            <div class="card-tags">
+              <span class="tag">Tropical</span>
+              <span class="tag">Intelligent</span>
+              <span class="tag">Social</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bird-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?w=600&h=400&fit=crop" alt="Chouette hulotte" loading="lazy">
+            <span class="card-badge">Nocturne</span>
+          </div>
+          <div class="card-body">
+            <h3>Chouette hulotte</h3>
+            <p class="latin-name">Strix aluco</p>
+            <p>La reine de la nuit ! Ses yeux immenses et son vol silencieux en font une chasseuse redoutable.</p>
+            <div class="card-tags">
+              <span class="tag">Nocturne</span>
+              <span class="tag">Foret</span>
+              <span class="tag">Rapace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>🎬 Videos a couper le souffle</h2>
+        <p>Plongez dans l'univers des oiseaux en video</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card fade-in">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/rX40mBb8bkU" title="Oiseaux de paradis" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3>Les Oiseaux de Paradis</h3>
+            <p>Des danses nuptiales extraordinaires filmees en Papouasie</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-in">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/W7QZnwKqopo" title="Rapaces en vol" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3>Les Rapaces en Action</h3>
+            <p>Aigles, faucons et buses : les maitres du ciel</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-in">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/nZsGhWnsdTo" title="Chants d'oiseaux" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3>Symphonie Matinale</h3>
+            <p>Les plus beaux chants d'oiseaux de la foret francaise</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section class="fun-facts">
+    <h2>🧠 Le saviez-vous ?</h2>
+    <div class="facts-grid">
+      <div class="fact-card fade-in">
+        <div class="fact-emoji">🦅</div>
+        <h3>Vision de rapace</h3>
+        <p>Un aigle peut reperer un lapin a plus de 3 km de distance. Sa vision est 8 fois plus precieuse que celle d'un humain !</p>
+      </div>
+      <div class="fact-card fade-in">
+        <div class="fact-emoji">🐧</div>
+        <h3>Marathon sous-marin</h3>
+        <p>Le manchot empereur peut plonger jusqu'a 565 metres de profondeur et retenir sa respiration pendant 22 minutes !</p>
+      </div>
+      <div class="fact-card fade-in">
+        <div class="fact-emoji">🦜</div>
+        <h3>Einstein a plumes</h3>
+        <p>Le perroquet gris du Gabon peut apprendre plus de 1000 mots et comprendre des concepts abstraits comme la couleur et la forme.</p>
+      </div>
+      <div class="fact-card fade-in">
+        <div class="fact-emoji">🕊️</div>
+        <h3>GPS naturel</h3>
+        <p>Les pigeons voyageurs detectent le champ magnetique terrestre grace a des cristaux de magnetite dans leur bec !</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-white text-center" style="padding: 5rem 2rem;">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>🔭 Pret a observer ?</h2>
+        <p>Rejoignez notre communaute de passionnes et partagez vos plus belles observations</p>
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;" class="fade-in">
+        <a href="observation.html" class="btn btn-primary"><i class="fas fa-binoculars"></i> Guide d'observation</a>
+        <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i> Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🐦 Plumes & Becs</h4>
+        <p>Le site de reference pour les passionnes d'ornithologie en France et en Europe.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorer</h4>
+        <a href="especes.html">Especes</a>
+        <a href="galerie.html">Galerie photo</a>
+        <a href="observation.html">Conseils d'observation</a>
+        <a href="a-propos.html">A propos</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ressources</h4>
+        <a href="#">Guide du debutant</a>
+        <a href="#">Forum communautaire</a>
+        <a href="#">Newsletter</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Plumes & Becs. Tous droits reserves. | Fait avec ❤️ pour les oiseaux</p>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner (intentionally non-compliant) -->
+  <div class="cookie-banner">
+    <p>🍪 Ce site utilise des cookies pour ameliorer votre experience. En continuant, vous acceptez notre utilisation des cookies.</p>
+    <div class="cookie-btns">
+      <button class="btn-accept">Accepter</button>
+      <button class="btn-reject">Refuser</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

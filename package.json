@@ -1,0 +1,15 @@
+{
+  "name": "plumes-et-becs",
+  "version": "1.0.0",
+  "description": "Site ornithologique fun — Plumes & Becs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}

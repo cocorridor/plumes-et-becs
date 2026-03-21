@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Plumes & Becs</title>
+  <meta name="description" content="Contactez l'equipe Plumes & Becs. Questions, suggestions, partenariats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+  <!-- HubSpot Tracking (US CRM — intentional for detection) -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/00000000.js"></script>
+
+  <!-- Intercom (US support — intentional for detection) -->
+  <script>
+    window.intercomSettings = { api_base: "https://api-eus.intercom.io", app_id: "xxxxxxxx" };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;}})();
+  </script>
+
+  <!-- Stripe.js (US payment — intentional for detection) -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span>🐦</span> Plumes & Becs</a>
+      <div class="nav-toggle"><span></span><span></span><span></span></div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="especes.html">Especes</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="observation.html">Observation</a>
+        <a href="a-propos.html">A propos</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <h1>✉️ Contactez-nous</h1>
+      <p>Une question ? Une suggestion ? Une observation insolite a partager ? Ecrivez-nous !</p>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="container">
+      <div class="contact-section fade-in">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Votre nom</label>
+            <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Votre email</label>
+            <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+            <select id="subject" name="subject" required>
+              <option value="">-- Choisissez un sujet --</option>
+              <option value="question">Question generale</option>
+              <option value="observation">Partager une observation</option>
+              <option value="identification">Aide a l'identification</option>
+              <option value="partenariat">Partenariat</option>
+              <option value="bug">Signaler un probleme</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment"></i> Votre message</label>
+            <textarea id="message" name="message" placeholder="Decrivez votre demande..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="newsletter" style="width: auto; margin-right: 0.5rem;">
+              Je souhaite recevoir la newsletter Plumes & Becs (1 email/mois)
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> Envoyer
+          </button>
+        </form>
+
+        <div style="margin-top: 3rem; text-align: center;" class="fade-in">
+          <h3 style="font-family: 'Fredoka One', cursive; color: var(--forest); margin-bottom: 1rem;">📍 Autres moyens de contact</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem;">
+            <div style="padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+              <p style="font-size: 2rem; margin-bottom: 0.5rem;">📧</p>
+              <p><strong>Email</strong></p>
+              <p style="color: var(--gray-600);">contact@plumes-et-becs.fr</p>
+            </div>
+            <div style="padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+              <p style="font-size: 2rem; margin-bottom: 0.5rem;">📱</p>
+              <p><strong>Telephone</strong></p>
+              <p style="color: var(--gray-600);">01 23 45 67 89</p>
+            </div>
+            <div style="padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+              <p style="font-size: 2rem; margin-bottom: 0.5rem;">📍</p>
+              <p><strong>Adresse</strong></p>
+              <p style="color: var(--gray-600);">12 rue des Merles<br>75011 Paris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map embed (Google Maps — US service, intentional for detection) -->
+  <section class="bg-light" style="padding: 0;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4!2d2.38!3d48.86!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUxJzM2LjAiTiAywrAyMic0OC4wIkU!5e0!3m2!1sfr!2sfr!4v1000000000000!5m2!1sfr!2sfr"
+      width="100%"
+      height="400"
+      style="border:0; display: block;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Localisation Plumes & Becs">
+    </iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🐦 Plumes & Becs</h4>
+        <p>Le site de reference pour les passionnes d'ornithologie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorer</h4>
+        <a href="especes.html">Especes</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="observation.html">Conseils</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Plumes & Becs. Tous droits reserves.</p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner">
+    <p>🍪 Ce site utilise des cookies pour ameliorer votre experience.</p>
+    <div class="cookie-btns">
+      <button class="btn-accept">Accepter</button>
+      <button class="btn-reject">Refuser</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
